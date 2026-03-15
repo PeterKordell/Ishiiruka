@@ -133,7 +133,7 @@ endif()
 
 if(wxWidgets_FOUND)
 	add_executable("${DOLPHIN_EXE}" ${SRCS} ${GUI_SRCS})
-	target_link_libraries("${DOLPHIN_EXE}" ${LIBS} ${WXLIBS})
+	target_link_libraries("${DOLPHIN_EXE}" PRIVATE ${LIBS} ${WXLIBS})
 
 	# Link SlippiRustExtensions in.
 	#
